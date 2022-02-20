@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+<h1>Hello, {{name}}!</h1>
+<i class="bi bi-music-note-beamed" onclick="play('sweep')"></i>
+<i class="bi bi-phone-vibrate" onclick="vibrate()"></i>
+<i class="bi bi-megaphone" onclick="tone('A4', '64n')"></i>
+<i class="bi bi-megaphone" onclick="tone('B4', '64n')"></i>
+<i class="bi bi-megaphone" onclick="tone('C5', '64n')"></i>
+<i class="bi bi-megaphone" onclick="tone('D5', '64n')"></i>
+</div>
+<div>
+  <a href="/game">Link to Game</a>
+</div>
+{% endblock %}
